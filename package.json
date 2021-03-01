@@ -1,0 +1,28 @@
+{
+  "name": "thenolles-studios-launcher",
+  "version": "0.0.1",
+  "description": "TheNolle's Studios Launcher",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "buildW": "electron-builder build -w",
+    "buildM": "electron-builder build -m",
+    "buildL": "electron-builder build -l"
+  },
+  "author": "TheNolle",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^9.0.0",
+    "electron-builder": "^22.7.0",
+    "shell": "^0.8.4"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "discord-rpc": "^3.1.4",
+    "minecraft-launcher-core": "^3.14.1"
+  },
+  "build": {
+    "appId": "fr.thenolle.studios.launcher",
+    "icon": "assets/img/global/logos/app-logo.png"
+  }
+}
