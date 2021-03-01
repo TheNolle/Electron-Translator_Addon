@@ -1,0 +1,24 @@
+{
+    "name": "Français",
+    "LangsTitlePopup": "Changer de Langue",
+    "ExampleTitle": "Exemple:",
+    "ExampleText": "Si vous pouvez lire ce texte c'est que vous avez choisi une langue que vous comprenez, vous pouvez donc fermer cette popup et continuer votre utilisation du launcher.",
+
+    "IncorporationFooter": "Inc",
+    "AboutFooter": "À Propos",
+    "DataUsageFooter": "Utilisation des Données",
+    "HowToUseFooter": "Comment Utiliser",
+    "ChangeLanguageFooter": "Changer de Langue",
+    
+    "SocialLinks": "Liens Sociaux",
+    "NewsBody": "Nouveautés",
+    
+    "NewsTitle1": "Minecraft avec des Axolotls!",
+    "NewsText11": "Minecraft à maintenant des Axolotls!",
+    "NewsText12": "Encore une fois un texte aléatoire qui sera ici comme placeholder pour la news #1 du launcher",
+    "ReadTheArticle": "Lire l'article",
+
+    "MojangLoginTitle": "Connexion avec Mojang",
+    "RememberMeLabel": "Se souvenir de moi",
+    "ConnexionButton": "Connexion"
+}

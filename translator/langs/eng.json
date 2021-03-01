@@ -1,0 +1,24 @@
+{
+    "name": "English",
+    "LangsTitlePopup": "Change Language",
+    "ExampleTitle": "Example:",
+    "ExampleText": "If you can read this text, you have chosen a language that you understand, so you can close this popup and continue using the launcher.",
+
+    "IncorporationFooter": "Inc",
+    "AboutFooter": "About",
+    "DataUsageFooter": "Data Usage",
+    "HowToUseFooter": "How To Use",
+    "ChangeLanguageFooter": "Change Language",
+
+    "SocialLinks": "Social Links",
+    "NewsBody": "News",
+    
+    "NewsTitle1": "Minecraft with Axolotls!",
+    "NewsText11": "Minecraft now has axolotl!",
+    "NewsText12": "Again some random text that is here as a placeholder for the news #1 of this launcher",
+    "ReadTheArticle": "Lire l'article",
+
+    "MojangLoginTitle": "Mojang Login",
+    "RememberMeLabel": "Remember me",
+    "ConnexionButton": "Login"
+}
