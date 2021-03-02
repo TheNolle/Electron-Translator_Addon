@@ -1,24 +1,22 @@
 {
     "name": "Español",
-    "LangsTitlePopup": "Cambiar idioma",
-    "ExampleTitle": "Ejemplo:",
-    "ExampleText": "Si puede leer este texto, ha elegido un idioma que comprende, por lo que puede cerrar esta ventana emergente y continuar usando el lanzador.",
-
-    "IncorporationFooter": "Inc",
-    "AboutFooter": "A proposito",
-    "DataUsageFooter": "Uso de datos",
-    "HowToUseFooter": "Cómo usar",
-    "ChangeLanguageFooter": "Cambiar idioma",
-
-    "SocialLinks": "Vínculos Sociales",
-    "NewsBody": "Noticias",
-    
-    "NewsTitle1": "Minecraft con Axolotls!",
-    "NewsText11": "¡Minecraft ahora tiene Axolotls!",
-    "NewsText12": "Una vez más un texto aleatorio que estará aquí como marcador de posición para la noticia #1 del lanzador",
-    "ReadTheArticle": "Lire l'article",
-
-    "MojangLoginTitle": "Conexión con Mojang",
-    "RememberMeLabel": "Se acuerda de mi",
-    "ConnexionButton": "Acceso"
+    "content": {
+        "LangsTitlePopup": "Cambiar idioma",
+        "ExampleTitle": "Ejemplo:",
+        "ExampleText": "Si puede leer este texto, ha elegido un idioma que comprende, por lo que puede cerrar esta ventana emergente y continuar usando el lanzador.",
+        "IncorporationFooter": "Inc",
+        "AboutFooter": "A proposito",
+        "DataUsageFooter": "Uso de datos",
+        "HowToUseFooter": "Cómo usar",
+        "ChangeLanguageFooter": "Cambiar idioma",
+        "SocialLinks": "Vínculos Sociales",
+        "NewsBody": "Noticias",
+        "NewsTitle1": "Minecraft con Axolotls!",
+        "NewsText11": "¡Minecraft ahora tiene Axolotls!",
+        "NewsText12": "Una vez más un texto aleatorio que estará aquí como marcador de posición para la noticia #1 del lanzador",
+        "ReadTheArticle": "Lire l'article",
+        "MojangLoginTitle": "Conexión con Mojang",
+        "RememberMeLabel": "Se acuerda de mi",
+        "ConnexionButton": "Acceso"
+    }
 }

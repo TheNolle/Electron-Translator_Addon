@@ -1,24 +1,22 @@
 {
     "name": "Svenska",
-    "LangsTitlePopup": "Ändra språk",
-    "ExampleTitle": "Exempel:",
-    "ExampleText": "Om du kan läsa den här texten har du valt ett språk som du förstår, så att du kan stänga popup-fönstret och fortsätta använda startprogrammet.",
-
-    "IncorporationFooter": "Inf",
-    "AboutFooter": "Handla om",
-    "DataUsageFooter": "Dataanvändning",
-    "HowToUseFooter": "Hur man använder",
-    "ChangeLanguageFooter": "Ändra språk",
-
-    "SocialLinks": "Sociala Länkar",
-    "NewsBody": "Nyheter",
-    
-    "NewsTitle1": "Minecraft med Axolotls!",
-    "NewsText11": "Minecraft har nu Axolotls!",
-    "NewsText12": "Återigen en slumpmässig text som kommer att finnas här som en platshållare för #1 i startprogrammet",
-    "ReadTheArticle": "Lire l'article",
-
-    "MojangLoginTitle": "Anslutning till Mojang",
-    "RememberMeLabel": "Kom ihåg mig",
-    "ConnexionButton": "Logga in"
+    "content": {
+        "LangsTitlePopup": "Ändra språk",
+        "ExampleTitle": "Exempel:",
+        "ExampleText": "Om du kan läsa den här texten har du valt ett språk som du förstår, så att du kan stänga popup-fönstret och fortsätta använda startprogrammet.",
+        "IncorporationFooter": "Inf",
+        "AboutFooter": "Handla om",
+        "DataUsageFooter": "Dataanvändning",
+        "HowToUseFooter": "Hur man använder",
+        "ChangeLanguageFooter": "Ändra språk",
+        "SocialLinks": "Sociala Länkar",
+        "NewsBody": "Nyheter",
+        "NewsTitle1": "Minecraft med Axolotls!",
+        "NewsText11": "Minecraft har nu Axolotls!",
+        "NewsText12": "Återigen en slumpmässig text som kommer att finnas här som en platshållare för #1 i startprogrammet",
+        "ReadTheArticle": "Läs artikel",
+        "MojangLoginTitle": "Anslutning till Mojang",
+        "RememberMeLabel": "Kom ihåg mig",
+        "ConnexionButton": "Logga in"
+    }
 }

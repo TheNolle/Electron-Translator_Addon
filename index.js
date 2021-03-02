@@ -15,7 +15,7 @@ var mainWindow;
 function createWindow() {
   mainWindow = new BrowserWindow({
     title: "TheNolle's Realms 👑",
-    icon: path.join(__dirname, "assets/img/global/logos/app-logo.png"),
+    // icon: path.join(__dirname, "assets/img/global/logos/app-logo.png"),
     width: 1159,
     height: 626,
     frame: false,
