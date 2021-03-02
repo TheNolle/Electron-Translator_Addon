@@ -1,3 +1,6 @@
+// We need electron to determine the root directory of the app
+let electronapp = require("electron").remote.app;
+
 var langMap = new Map(); // New map for all langs
 const fs = require('fs');
 
@@ -14,21 +17,20 @@ const fs = require('fs');
  * }
  */
 
-
 function initLang() {
+    // we use electronapp.getAppPath() + '/translator/langs/' to get the language files from anywhere in the app
+    let langFiles = fs.readdirSync(electronapp.getAppPath() + '/translator/langs/').filter(file => file.endsWith('.json')); //Get all langs files .json
 
-    const langFiles = fs.readdirSync('./translator/langs/').filter(file => file.endsWith('.json')); //Get all langs files .json
-
-    var langSelect = document.getElementById("lang-select");
-    var langNumber = 0;
-    var length = langSelect.options.length;
+    let langSelect = document.getElementById("lang-select");
+    let langNumber = 0;
+    let length = langSelect.options.length;
     for (i = length - 1; i >= 0; i--) {
         langSelect.options[i] = null; //Clear all option
     }
-    for (const file of langFiles) { //Execute for each lang file
+    for (let file of langFiles) { //Execute for each lang file
         langNumber++;
-        const lang = require('./translator/langs/' + file);
-        var option = document.createElement('option'); //Create the option
+        let lang = require(electronapp.getAppPath() + '/translator/langs/' + file);
+        let option = document.createElement('option'); //Create the option
         option.text = lang.name; //Set option
         langSelect.add(option); //Add the option
         langMap.set(lang.name, file);
@@ -36,13 +38,12 @@ function initLang() {
     if (localStorage.getItem('lang') && localStorage.getItem('lang-file')) { // if have localstorage
 
         document.getElementById('lang-select').value = localStorage.getItem('lang'); // Set selector option to the lang selected
-        const fs = require('fs');
-        fs.readFile('./translator/langs/' + localStorage.getItem("lang-file"), 'utf8', (err, data) => { // Read the lang file selectioned
+        fs.readFile(electronapp.getAppPath() + '/translator/langs/' + localStorage.getItem("lang-file"), 'utf8', (err, data) => { // Read the lang file selectioned
             if (err) {
                 console.error(err) // Log if have a error
                 return
             }
-            const file = JSON.parse(data); // Parse the json
+            let file = JSON.parse(data); // Parse the json
 
 
             // get all elements with the translate class
@@ -76,7 +77,7 @@ function initLang() {
 }
 
 function validateLang() { // When button done is pressed
-    const langSelect = document.getElementById("lang-select"); // Get selector
+    let langSelect = document.getElementById("lang-select"); // Get selector
     localStorage.removeItem('lang'); // Clear localstorage
     localStorage.removeItem('lang-file'); // Clear localstorage
     localStorage.setItem('lang', langSelect.value); // Add the lang name at localstorage
