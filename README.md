@@ -3,7 +3,7 @@
 
 <a href="https://TheNolle.com/Discord"><img src="https://www.thenolle.com/public_assets/img/banners/discord-banner.png" alt="TheNolle's Discord" width="200"/></a>
 
-This repository is licensed under MIT License,
+This repository is licensed under <a href="./LICENSE">MIT License</a>,
 Please do not steal any of the code.
 
 - This repository has been created to seek for help with the translator plugin
@@ -36,4 +36,4 @@ Please do not steal any of the code.
 
 ## License
 
-MIT
+<a href="./LICENSE">MIT</a>
