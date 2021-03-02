@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../../assets/css/global/utils/popup.css">
 
     <!-- JS -->
-    <script src="../../assets/js/global/Font Awesome Pro 5.14.0.js"></script>
+    <script src="https://www.thenolle.com/global_assets/js/Font%20Awesome%20Pro%205.14.0.js"></script>
 </head>
 
 <body onload="initLang()">
@@ -49,7 +49,7 @@
         <form class="login-form validate-form">
 
             <span class="login-form-title p-b-35">
-                <tag id="MojangLoginTitle">Mojang Login</tag> <i class="far fa-sign-in"></i>
+                <tag id="MojangLoginTitle" class="translate" data-lang-node="MojangLoginTitle">Mojang Login</tag> <i class="far fa-sign-in"></i>
             </span>
 
             <div class="wrap-input m-b-15">
@@ -64,12 +64,12 @@
 
             <input type="checkbox" value="RememberMe" id="rememberMe" class="m-b-30">
             <label for="rememberMe">
-                <tag id="RememberMeLabel">Remember me</tag> <i class="far fa-box"></i>
+                <tag id="RememberMeLabel" class="translate" data-lang-node="RememberMeLabel">Remember me</tag> <i class="far fa-box"></i>
             </label>
 
             <div class="container-login-form-btn">
                 <button type="button" class="login-form-btn" id="login">
-                    <tag id="ConnexionButton">Login</tag> 🔓
+                    <tag id="ConnexionButton" class="translate" data-lang-node="ConnexionButton">Login</tag> 🔓
                 </button>
             </div>
         </form>
@@ -88,16 +88,16 @@
                 </a>
                 <div class="footer-links">
                     <a href="../../pages/global/infos.html">
-                        <tag id="AboutFooter">About</tag> <i class="fas fa-info"></i>
+                        <tag id="AboutFooter" class="translate" data-lang-node="AboutFooter">About</tag> <i class="fas fa-info"></i>
                     </a>
                     <a href="../../pages/global/data_usage.html">
-                        <tag id="DataUsageFooter">Data Usage</tag> <i class="fas fa-database"></i>
+                        <tag id="DataUsageFooter" class="translate" data-lang-node="DataUsageFooter">Data Usage</tag> <i class="fas fa-database"></i>
                     </a>
                     <a href="../../pages/global/how_to_use.html">
-                        <tag id="HowToUseFooter">How To Use</tag> <i class="fas fa-question"></i>
+                        <tag id="HowToUseFooter" class="translate" data-lang-node="HowToUseFooter">How To Use</tag> <i class="fas fa-question"></i>
                     </a>
                     <a onclick="langsPopup()" style="cursor: pointer;">
-                        <tag id="ChangeLanguageFooter">Change Language</tag> <i class="fas fa-language"></i>
+                        <tag id="ChangeLanguageFooter" class="translate" data-lang-node="ChangeLanguageFooter">Change Language</tag> <i class="fas fa-language"></i>
                     </a>
                 </div>
             </div>
@@ -110,17 +110,17 @@
             <div class="popup-close-btn" onclick="langsPopup()">
                 <i class="fas fa-times"></i>
             </div>
-            <h1 id="LangsTitlePopup">
+            <h1 id="LangsTitlePopup" class="translate" data-lang-node="LangsTitlePopup">
                 Change Language
             </h1>
             <select name="langs" id="lang-select" onchange="validateLang()">
 
             </select>
             <br>
-            <h4 id="ExampleTitle">
+            <h4 id="ExampleTitle" class="translate" data-lang-node="ExampleTitle">
                 Example:
             </h4>
-            <p id="ExampleText">
+            <p id="ExampleText" class="translate" data-lang-node="ExampleText">
                 If you can read this text, you have chosen a language that you understand, so you can close this popup
                 and continue using the launcher.
             </p>
@@ -134,7 +134,7 @@
 <script src="../../assets/js/global/utils-buttons.js"></script>
 <script src="../../assets/js/login/Login.js"></script>
 <script src="../../assets/js/login/rememberMe.js"></script>
-<script src="../../translator/js/connexion.js"></script>
+<script src="../../translator/js/translator.js"></script>
     <script>
         function langsPopup() {
             document.getElementById("langsPopup").classList.toggle("popup-active");
