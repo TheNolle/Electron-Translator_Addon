@@ -1,38 +1,24 @@
 # TheNolle's Electron Translator Plugin
-## Sample repository for the translator plugin
 
-<a href="https://TheNolle.com/Discord" target="_blank"><img src="https://www.thenolle.com/global_assets/img/banners/discord.png" alt="TheNolle's Discord" width="250"/></a>
+<a href="https://TheNolle.com/Discord">
+<img src="https://www.thenolle.com/global_assets/img/banners/discord.png" width="250"/>
+</a>
 
-This repository is licensed under <a href="./LICENSE">MIT License</a>,
-Please do not steal any of the code.
+- This repository has been created to publish a work in collaboration with @AntonUden
+- You can try to improve the plugin on your own and make pull requests if you want to.
+- ❤ Thank you ❤
 
-- This repository has been created to seek for help with the translator plugin
-- See the problems listed under here
-- 🎇 Thank you 🎇
+## Infos
 
-## Issues
+- You can't use a **&lt;tag&gt;** or **&lt;translate&gt;** to use the plugin inside another **&lt;tag&gt;** or **&lt;translate&gt;**
+- Works for multiple pages, just need to import the plugin in every pages you want it to work in.
+- Never forget to add a way for the users to change the language as I did with my popup!
+- You can change the **CSS** the way you want, it won't affect the plugin!
 
-- When trying to translate multiple pages, the plugin doesn't work and doesn't show any error
-- **index.html** is correctly translated into the different languages listed in **./translator/langs/<LANG>.json** when selecting it
-- Even after separating the different translators into two separated files, it doesn't work at all
-- I also tried using the same file to avoid code duplication, it still doesn't work
+> *Need help with anything? Just join my [Discord](https://TheNolle.com/Discord), i'll be more than happy to help you out* 😄
 
-> *I tried averything but it still doesn't work, if you have any solutions please contact me here: [My Discord](https://TheNolle.com/Discord)*
-
-
-### Here is the list of all the files that you should have to reproduce my plugin on an electron app
-| HTML | CSS | JS | JSON |
-| ------ | ------ | ------ | ------ |
-| index.html | style.css | index.js | eng.json |
-| connexion.html | body.css | connexion.js | fr.json |
-|   | main.css | home.js | es.json |
-|   | footer.css |   | sv.json |
-|   | nav.css |   |   |
-|   | popup.css |   |   |
-|   | utils.css | utils-buttons.js |   |
-|   | toast.css | toast.js |   |
-
-> Note: `electron`, `electron-builder`, `path`, `shell` is required and not contained in this repository.
+> Note: `electron`, `electron-builder` are required and are not contained in this repository.
+>- *To install them: `npm install electron electron-builder` in a terminale opened in the folder of the repository.*
 
 ## License
 
