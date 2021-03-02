@@ -16,6 +16,7 @@ const fs = require('fs');
  *  }
  * }
  */
+window.onload = initLang();
 
 function initLang() {
     // we use electronapp.getAppPath() + '/translator/langs/' to get the language files from anywhere in the app
@@ -69,7 +70,7 @@ function initLang() {
                 }
 
                 //console.log("element " + elem.id + " with data-lang-node set to " + dataLangNode + " should be translated to " + file[elem.id]); // for debugging
-                elem.textContent = translatedText; // prevent xss exploits by using textContent instead of innerHTML
+                elem.innerHTML = translatedText;
             }
         });
     }

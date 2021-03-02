@@ -1,22 +1,26 @@
 {
     "name": "Español",
     "content": {
-        "LangsTitlePopup": "Cambiar idioma",
-        "ExampleTitle": "Ejemplo:",
-        "ExampleText": "Si puede leer este texto, ha elegido un idioma que comprende, por lo que puede cerrar esta ventana emergente y continuar usando el lanzador.",
-        "IncorporationFooter": "Inc",
-        "AboutFooter": "A proposito",
-        "DataUsageFooter": "Uso de datos",
-        "HowToUseFooter": "Cómo usar",
-        "ChangeLanguageFooter": "Cambiar idioma",
-        "SocialLinks": "Vínculos Sociales",
-        "NewsBody": "Noticias",
-        "NewsTitle1": "Minecraft con Axolotls!",
-        "NewsText11": "¡Minecraft ahora tiene Axolotls!",
-        "NewsText12": "Una vez más un texto aleatorio que estará aquí como marcador de posición para la noticia #1 del lanzador",
-        "ReadTheArticle": "Lire l'article",
-        "MojangLoginTitle": "Conexión con Mojang",
-        "RememberMeLabel": "Se acuerda de mi",
-        "ConnexionButton": "Acceso"
+        "main.title": "Traductor de Electrones de TheNolle",
+
+        "example.title.one": "TITULO UNO",
+        "example.description.one": "Descripción del título uno,",
+        "example.text.one": "¡ Como puede ver, puede traducir este texto a varios idiomas sin tener index.html ! Puede usar etiquetas personalizadas como &lt;tag&gt; o &lt;translate&gt; para traducir partes de un texto, ¡pero para eso tendrá que usar estas etiquetas varias veces si tiene textos grandes como este! Para que pueda cambiar algunas partes de un texto, puede ver un ejemplo en el último modal.",
+
+        "example.title.two": "TITULO DOS",
+        "example.description.two": "Descripción del título dos,",
+        "example.text.two.tag": "Como dije, puede usar &lt;tag&gt; o &lt;translate&gt; para cambiar solo ciertas áreas, como esta, por ejemplo, desde el comienzo de este texto a 'This text...' está en un &lt;tag&gt; y como puede ver",
+        "example.text.two.translate": "y todo el texto de 'the language' al final está en un &lt;translate&gt;.",
+
+        "example.date": "02 de marzo de 2021",
+        
+        "popup.langs.title": "Cambiar el idioma",
+        "popup.langs.information.title": "Información:",
+        "popup.langs.information.text": "También tiene un ejemplo de Popup con este archivo que encontrará directamente en el index.html justo debajo de la parte inferior de la página.",
+
+        "footer.logo.inc": "Inc.",
+        "footer.link1": "Enlace 1",
+        "footer.link2": "Enlace 2",
+        "footer.popup.langs": "Cambiar el Idioma"
     }
 }

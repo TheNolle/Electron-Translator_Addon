@@ -1,0 +1,26 @@
+{
+    "name": "English 😁",
+    "content": {
+        "main.title": "Even supports Emojis! 🎉",
+
+        "example.title.one": "TITLE 1️⃣",
+        "example.description.one": "Title description 1️⃣,",
+        "example.text.one": "You can, as you can see, translate this text into multiple languages without having to have an enormous index.html ! You can use custom tags like &lt;tag&gt; or &lt;translate&gt; to translate a certain place in a text, but you'll have to use it multiple times if you have a really big text like this! So like this you can change only certain parts of the text, you'll see an example in the last modal.",
+
+        "example.title.two": "TITLE 2️⃣",
+        "example.description.two": "Title description 2️⃣,",
+        "example.text.two.tag": "As said, you can use &lt;tag&gt; or &lt;translate&gt; to change only a specific area, for example this, from the start of the text to 'This text...' is in a &lt;tag&gt; and as you can see",
+        "example.text.two.translate": "and all the text from 'the language' to the end is in a &lt;translate&gt;.",
+
+        "example.date": "March 02, 2021 📆",
+
+        "popup.langs.title": "Change Language 👑",
+        "popup.langs.information.title": "Information:",
+        "popup.langs.information.text": "You also have an example of Popup with this file that you can find direcly in the index.html just under the footer.",
+
+        "footer.logo.inc": "Inc. 🏭",
+        "footer.link1": "Link 1 🔗",
+        "footer.link2": "Link 2 🔗",
+        "footer.popup.langs": "Change Language 👑"
+    }
+}

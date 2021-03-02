@@ -1,0 +1,26 @@
+{
+    "name": "Français 😁",
+    "content": {
+        "main.title": "Supporte même les Emojis! 🎉",
+
+        "example.title.one": "TITRE 1️⃣",
+        "example.description.one": "Description de titre 1️⃣,",
+        "example.text.one": "Vous pouvez, comme vous le voyez, traduire ce texte dans plusieurs langues sans avoir d'énormes index.html ! Vous pouvez utiliser des tags customs comme &lt;tag&gt; ou &lt;translate&gt; pour traduire certaines parties d'un texte, mais pour cela vous devrez utiliser plusieurs fois ces tags si vous avez de gros textes comme celui-ci! Ainsi vous pouvez changer certaines parties d'un texte, vous pouvez voir un exemple dans le dernier modal.",
+
+        "example.title.two": "TITRE 2️⃣",
+        "example.description.two": "Description de titre 2️⃣,",
+        "example.text.two.tag": "Comme je l'ai dis, vous pouvez utiliser &lt;tag&gt; ou &lt;translate&gt; pour changer seulement certaines zones, comme ça par exemple, du début de ce texte à 'This text...' est dans un &lt;tag&gt; et comme vous pouvez le voir",
+        "example.text.two.translate": "et tout le texte de 'the language' à la fin est dans un &lt;translate&gt;.",
+
+        "example.date": "02 Mars, 2021 📆",
+
+        "popup.langs.title": "Changer la langue",
+        "popup.langs.information.title": "Information:",
+        "popup.langs.information.text": "Vous avez aussi un exemple de Popup avec ce fichier que vous trouverez directement dans le index.html juste en dessous du bas de page.",
+
+        "footer.logo.inc": "Inc. 🏭",
+        "footer.link1": "Lien 1 🔗",
+        "footer.link2": "Lien 2 🔗",
+        "footer.popup.langs": "Changer la Langue"
+    }
+}

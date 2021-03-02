@@ -1,7 +1,7 @@
 {
-  "name": "thenolles-launcher",
-  "version": "0.0.1",
-  "description": "TheNolle's Launcher",
+  "name": "thenolles-electron-translator",
+  "version": "0.0.2",
+  "description": "TheNolle's Electron Translator Plugin",
   "main": "index.js",
   "scripts": {
     "start": "electron .",
@@ -9,14 +9,21 @@
     "buildM": "electron-builder build -m",
     "buildL": "electron-builder build -l"
   },
-  "author": "TheNolle",
+  "author": "TheNolle, AntonUden",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^9.0.0",
-    "electron-builder": "^22.7.0",
-    "shell": "^0.8.4"
+    "electron": "^9.4.3",
+    "electron-builder": "^22.10.5"
   },
   "build": {
-    "appId": "fr.thenolle.studios.launcher"
-  }
+    "appId": "fr.thenolle.electron.translator"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheNolle/Electron-Translator-Plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TheNolle/Electron-Translator-Plugin/issues"
+  },
+  "homepage": "https://github.com/TheNolle/Electron-Translator-Plugin#readme"
 }

@@ -1,25 +1,18 @@
-// Importation des modules
+// Modules
 const path = require("path");
-const { app, ipcMain, shell, BrowserWindow } = require("electron");
+const { app, shell, BrowserWindow } = require("electron");
 
-
-
-
-// Variables globales
+// Globale Variables
 var mainWindow;
 
-
-
-
-// Création de la fenêtre principale
+// Main Window Creation
 function createWindow() {
   mainWindow = new BrowserWindow({
-    title: "TheNolle's Realms 👑",
-    icon: path.join(__dirname, "assets/img/global/logos/app-logo.png"),
+    title: "TheNolle's Electron Translator",
     width: 1159,
     height: 626,
     frame: false,
-    titleBarStyle: "hidden",
+    icon: "assets/img/logo.png",
     webPreferences: {
       devTools: true,
       nodeIntegration: true,
@@ -27,31 +20,28 @@ function createWindow() {
     },
   });
 
-  // Chargement de la page "index.html"
+  // Loading "index.html"
   mainWindow.loadURL(path.join(__dirname, "index.html"));
 }
 
-
-
-
-// Quand l'application est chargée effectuer les scripts suivants:
+// When app is ready, run following scripts:
 app.whenReady().then(() => {
-  // Créer la fenêtre
+  // Main Window Creation
   createWindow();
 
-  // Ouvrir les liens <a> dans une fenêtre de l'explorateur principal
+  // Open <a> links in a new window on your main browser
   mainWindow.webContents.on("new-window", function (event, url) {
     event.preventDefault();
     shell.openExternal(url);
   });
 
-  // Autoriser la création de la fenêtre quand l'application est prête
+  // When app launched, allow Window Creation
   app.on("activate", function () {
     if (BrowserWindow.getAllWindows().length === 0) createWindow();
   });
 });
 
-// Si toutes les fenêtres sont fermées, quitter l'application
+// When every windows are closed, kill the app
 app.on("window-all-closed", function () {
   if (process.platform !== "darwin") app.quit();
 });

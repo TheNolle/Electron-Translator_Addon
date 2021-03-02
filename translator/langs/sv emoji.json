@@ -1,0 +1,26 @@
+{
+    "name": "Svenska 😁",
+    "content": {
+        "main.title": "Stöder även Emojis! 🎉",
+
+        "example.title.one": "AVDELNING 1️⃣",
+        "example.description.one": "Titelbeskrivning 1️⃣,",
+        "example.text.one": "Du kan använda anpassade taggar som &lt;tag&gt; eller &lt;translate&gt; för att översätta delar av en text, men för det måste du använda dessa taggar flera gånger om du har stora texter som denna! Så du kan ändra vissa delar av en text, du kan se ett exempel i den senaste modalen.",
+
+        "example.title.two": "AVDELNING 2️⃣",
+        "example.description.two": "Titelbeskrivning 2️⃣,",
+        "example.text.two.tag": "Som jag sa kan du använda &lt;tag&gt; eller &lt;translate&gt; för att bara ändra vissa områden, till exempel detta, från början av denna text till 'This text ...' finns i en XXXXX och som du kan se",
+        "example.text.two.translate": "och all text i 'the language' i slutet finns i en &lt;translate&gt;.",
+
+        "example.date": "02 Mars, 2021 📆",
+
+        "popup.langs.title": "Ändra språk",
+        "popup.langs.information.title": "Information:",
+        "popup.langs.information.text": "Du har också ett exempel på popup-fönster med den här filen som du hittar direkt i index.html strax nedanför sidan av sidan.",
+
+        "footer.logo.inc": "Inf. 🏭",
+        "footer.link1": "Länk 1 🔗",
+        "footer.link2": "Länk 2 🔗",
+        "footer.popup.langs": "Ändra Språk"
+    }
+}

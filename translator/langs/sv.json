@@ -1,22 +1,26 @@
 {
     "name": "Svenska",
     "content": {
-        "LangsTitlePopup": "Ändra språk",
-        "ExampleTitle": "Exempel:",
-        "ExampleText": "Om du kan läsa den här texten har du valt ett språk som du förstår, så att du kan stänga popup-fönstret och fortsätta använda startprogrammet.",
-        "IncorporationFooter": "Inf",
-        "AboutFooter": "Handla om",
-        "DataUsageFooter": "Dataanvändning",
-        "HowToUseFooter": "Hur man använder",
-        "ChangeLanguageFooter": "Ändra språk",
-        "SocialLinks": "Sociala Länkar",
-        "NewsBody": "Nyheter",
-        "NewsTitle1": "Minecraft med Axolotls!",
-        "NewsText11": "Minecraft har nu Axolotls!",
-        "NewsText12": "Återigen en slumpmässig text som kommer att finnas här som en platshållare för #1 i startprogrammet",
-        "ReadTheArticle": "Läs artikel",
-        "MojangLoginTitle": "Anslutning till Mojang",
-        "RememberMeLabel": "Kom ihåg mig",
-        "ConnexionButton": "Logga in"
+        "main.title": "Elektronöversättare av TheNolle",
+
+        "example.title.one": "AVDELNING EN",
+        "example.description.one": "Titelbeskrivning en,",
+        "example.text.one": "Du kan använda anpassade taggar som &lt;tag&gt; eller &lt;translate&gt; för att översätta delar av en text, men för det måste du använda dessa taggar flera gånger om du har stora texter som denna! Så du kan ändra vissa delar av en text, du kan se ett exempel i den senaste modalen.",
+
+        "example.title.two": "AVDELNING TVÅ",
+        "example.description.two": "Titelbeskrivning två,",
+        "example.text.two.tag": "Som jag sa kan du använda &lt;tag&gt; eller &lt;translate&gt; för att bara ändra vissa områden, till exempel detta, från början av denna text till 'This text ...' finns i en XXXXX och som du kan se",
+        "example.text.two.translate": "och all text i 'the language' i slutet finns i en &lt;translate&gt;.",
+
+        "example.date": "02 Mars, 2021",
+
+        "popup.langs.title": "Ändra språk",
+        "popup.langs.information.title": "Information:",
+        "popup.langs.information.text": "Du har också ett exempel på popup-fönster med den här filen som du hittar direkt i index.html strax nedanför sidan av sidan.",
+
+        "footer.logo.inc": "Inf.",
+        "footer.link1": "Länk 1",
+        "footer.link2": "Länk 2",
+        "footer.popup.langs": "Ändra Språk"
     }
 }

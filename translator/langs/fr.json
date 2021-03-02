@@ -1,22 +1,26 @@
 {
     "name": "Français",
     "content": {
-        "LangsTitlePopup": "Changer de Langue",
-        "ExampleTitle": "Exemple:",
-        "ExampleText": "Si vous pouvez lire ce texte c'est que vous avez choisi une langue que vous comprenez, vous pouvez donc fermer cette popup et continuer votre utilisation du launcher.",
-        "IncorporationFooter": "Inc",
-        "AboutFooter": "À Propos",
-        "DataUsageFooter": "Utilisation des Données",
-        "HowToUseFooter": "Comment Utiliser",
-        "ChangeLanguageFooter": "Changer de Langue",
-        "SocialLinks": "Liens Sociaux",
-        "NewsBody": "Nouveautés",
-        "NewsTitle1": "Minecraft avec des Axolotls!",
-        "NewsText11": "Minecraft à maintenant des Axolotls!",
-        "NewsText12": "Encore une fois un texte aléatoire qui sera ici comme placeholder pour la news #1 du launcher",
-        "ReadTheArticle": "Lire l'article",
-        "MojangLoginTitle": "Connexion avec Mojang",
-        "RememberMeLabel": "Se souvenir de moi",
-        "ConnexionButton": "Connexion"
+        "main.title": "Traducteur Electron par TheNolle",
+
+        "example.title.one": "TITRE UN",
+        "example.description.one": "Description de titre un,",
+        "example.text.one": "Vous pouvez, comme vous le voyez, traduire ce texte dans plusieurs langues sans avoir d'énormes index.html ! Vous pouvez utiliser des tags customs comme &lt;tag&gt; ou &lt;translate&gt; pour traduire certaines parties d'un texte, mais pour cela vous devrez utiliser plusieurs fois ces tags si vous avez de gros textes comme celui-ci! Ainsi vous pouvez changer certaines parties d'un texte, vous pouvez voir un exemple dans le dernier modal.",
+
+        "example.title.two": "TITRE DEUX",
+        "example.description.two": "Description de titre deux,",
+        "example.text.two.tag": "Comme je l'ai dis, vous pouvez utiliser &lt;tag&gt; ou &lt;translate&gt; pour changer seulement certaines zones, comme ça par exemple, du début de ce texte à 'This text...' est dans un &lt;tag&gt; et comme vous pouvez le voir",
+        "example.text.two.translate": "et tout le texte de 'the language' à la fin est dans un &lt;translate&gt;.",
+
+        "example.date": "02 Mars, 2021",
+
+        "popup.langs.title": "Changer la langue",
+        "popup.langs.information.title": "Information:",
+        "popup.langs.information.text": "Vous avez aussi un exemple de Popup avec ce fichier que vous trouverez directement dans le index.html juste en dessous du bas de page.",
+
+        "footer.logo.inc": "Inc.",
+        "footer.link1": "Lien 1",
+        "footer.link2": "Lien 2",
+        "footer.popup.langs": "Changer la Langue"
     }
 }

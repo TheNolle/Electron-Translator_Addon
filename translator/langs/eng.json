@@ -1,22 +1,26 @@
 {
     "name": "English",
     "content": {
-        "LangsTitlePopup": "Change Language",
-        "ExampleTitle": "Example:",
-        "ExampleText": "If you can read this text, you have chosen a language that you understand, so you can close this popup and continue using the launcher.",
-        "IncorporationFooter": "Inc",
-        "AboutFooter": "About",
-        "DataUsageFooter": "Data Usage",
-        "HowToUseFooter": "How To Use",
-        "ChangeLanguageFooter": "Change Language",
-        "SocialLinks": "Social Links",
-        "NewsBody": "News",
-        "NewsTitle1": "Minecraft with Axolotls!",
-        "NewsText11": "Minecraft now has axolotl!",
-        "NewsText12": "Again some random text that is here as a placeholder for the news #1 of this launcher",
-        "ReadTheArticle": "Read the article",
-        "MojangLoginTitle": "Mojang Login",
-        "RememberMeLabel": "Remember me",
-        "ConnexionButton": "Login"
+        "main.title": "Electron Translator by TheNolle",
+
+        "example.title.one": "TITLE ONE",
+        "example.description.one": "Title description one,",
+        "example.text.one": "You can, as you can see, translate this text into multiple languages without having to have an enormous index.html ! You can use custom tags like &lt;tag&gt; or &lt;translate&gt; to translate a certain place in a text, but you'll have to use it multiple times if you have a really big text like this! So like this you can change only certain parts of the text, you'll see an example in the last modal.",
+
+        "example.title.two": "TITLE TWO",
+        "example.description.two": "Title description two,",
+        "example.text.two.tag": "As said, you can use &lt;tag&gt; or &lt;translate&gt; to change only a specific area, for example this, from the start of the text to 'This text...' is in a &lt;tag&gt; and as you can see",
+        "example.text.two.translate": "and all the text from 'the language' to the end is in a &lt;translate&gt;.",
+
+        "example.date": "March 02, 2021",
+
+        "popup.langs.title": "Change Language",
+        "popup.langs.information.title": "Information:",
+        "popup.langs.information.text": "You also have an example of Popup with this file that you can find direcly in the index.html just under the footer.",
+
+        "footer.logo.inc": "Inc.",
+        "footer.link1": "Link 1",
+        "footer.link2": "Link 2",
+        "footer.popup.langs": "Change Language"
     }
 }
