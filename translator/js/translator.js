@@ -1,7 +1,7 @@
 // We need electron to determine the root directory of the app
 let electronapp = require("electron").remote.app;
 
-var langMap = new Map(); // New map for all langs
+const langMap = new Map(); // New map for all langs
 const fs = require('fs');
 
 /**
@@ -44,7 +44,6 @@ function initLang() {
                 return
             }
             let file = JSON.parse(data); // Parse the json
-
 
             // get all elements with the translate class
             let toTranslate = document.getElementsByClassName("translate");
