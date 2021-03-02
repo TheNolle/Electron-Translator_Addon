@@ -1,7 +1,7 @@
 # TheNolle's Studios Launcher
 ### _Sample repository for the translator plugin_
 
-<a href="https://TheNolle.com/Discord"><img src="https://www.thenolle.com/public_assets/img/banners/discord.png" alt="TheNolle's Discord" width="200"/></a>
+<a href="https://TheNolle.com/Discord"><img src="https://www.thenolle.com/global_assets/img/banners/discord.png" alt="TheNolle's Discord" width="200"/></a>
 
 This repository is licensed under <a href="./LICENSE">MIT License</a>,
 Please do not steal any of the code.
