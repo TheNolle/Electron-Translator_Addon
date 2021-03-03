@@ -1,185 +1,88 @@
-const electronapp = require("electron").remote.app;
+// We need electron to determine the root directory of the app
+let electronapp = require("electron").remote.app;
+
+const langMap = new Map(); // New map for all langs
 const fs = require('fs');
 
-const languageMap = new Map();
-
-const DEFAULT_OR_FALLBACK_LANGUAGE = "english";
-
-var selectedLanguage = DEFAULT_OR_FALLBACK_LANGUAGE;
-
-document.onload = initLanguageManager();
-
 /**
- * Called when the language manager is loaded
+ * To use this translator add the class translate to the elements and add data-lang-node="NODE_NAME_HERE".
+ * The final element should look something like this:
+ * <span class="translate" data-lang-node="hello_world">Hello World</span>
+ * And the language file should look like this:
+ * {
+ *  "name": "English"
+ *  "content": {
+ *    "hello_world": "Hello World"
+ *  }
+ * }
  */
-function initLanguageManager() {
-    console.log("initLanguageManager() called");
-    if (localStorage.getItem("selected_language") != null) {
-        selectedLanguage = localStorage.getItem("selected_language");
-    }
+window.onload = initLang();
 
-    readDefaultLanguageFiles();
-    translateElements();
-}
+function initLang() {
+    // we use electronapp.getAppPath() + '/translator/langs/' to get the language files from anywhere in the app
+    let langFiles = fs.readdirSync(electronapp.getAppPath() + '/translator/langs/').filter(file => file.endsWith('.json')); //Get all langs files .json
 
-/**
- * Read the launchers language files
- */
-function readDefaultLanguageFiles() {
-    readLangFiles(electronapp.getAppPath() + '/translator/langs/');
-}
-
-/**
- * Read all language files in a directory
- * @param {s} path The folder to read language files from
- */
-function readLangFiles(path) {
-    console.log("Reading language files from " + path);
-    let langFiles = fs.readdirSync(path).filter(file => file.endsWith('.json'));
-
-    for (let i in langFiles) {
-        let file = langFiles[i];
-        let fileContent = fs.readFileSync(path + "/" + file, 'utf8');
-
-        let content = JSON.parse(fileContent);
-
-        let langData = null;
-
-        if (languageMap[content.name] == undefined) {
-            if(content.name == undefined) {
-                console.error("Languge file " + file + " is missing the property: name. It wont be loaded until this is fixed");
-                continue;
-            }
-
-            if(content.display_name == undefined) {
-                console.error("Languge file " + file + " is missing the property: display_name. It wont be loaded until this is fixed");
-                continue;
-            }
-
-            langData = {
-                "name": content.name,
-                "display_name": content.display_name,
-                "content": {}
-            };
-        } else {
-            langData = languageMap[content.name];
-        }
-
-        for (let key in content.content) {
-            langData.content[key] = content.content[key];
-        }
-
-        languageMap[content.name] = langData;
-    }
-
-    updateLanguageSelector();
-}
-
-/**
- * Add all languages to the dropdown
- */
-function updateLanguageSelector() {
-    console.log("Updating language selector");
     let langSelect = document.getElementById("lang-select");
+    let langNumber = 0;
     let length = langSelect.options.length;
-
-    for (let i = length - 1; i >= 0; i--) {
-        langSelect.options[i] = null;
+    for (i = length - 1; i >= 0; i--) {
+        langSelect.options[i] = null; //Clear all option
     }
-
-    // Sort the languages before adding them to the list
-
-    let languages = [];
-
-    for (let key in languageMap) {
-        languages.push(languageMap[key]);
+    for (let file of langFiles) { //Execute for each lang file
+        langNumber++;
+        let lang = require(electronapp.getAppPath() + '/translator/langs/' + file);
+        let option = document.createElement('option'); //Create the option
+        option.text = lang.name; //Set option
+        langSelect.add(option); //Add the option
+        langMap.set(lang.name, file);
     }
+    if (localStorage.getItem('lang') && localStorage.getItem('lang-file')) { // if have localstorage
 
-    languages.sort((a, b) => a.display_name.localeCompare(b.display_name));
-
-    for (let i in languages) {
-        let language = languages[i];
-
-        let opt = document.createElement('option');
-
-        opt.innerText = language.display_name;
-        opt.value = language.name;
-
-        langSelect.add(opt);
-    }
-
-    langSelect.value = selectedLanguage;
-}
-
-/**
- * Translate all elements with the provided class or with the class translate if no class was provided
- * 
- * @param {string} className The name of the class to translate
- */
-function translateElements(className = "translate") {
-    let elements = document.getElementsByClassName(className);
-
-    for (let i = 0; i < elements.length; i++) {
-        let element = elements[i];
-
-        let dataLangNode = element.dataset["langNode"];
-
-        if (dataLangNode == undefined) {
-            console.warn("Element " + element + " has translate class but no lang-node data. Please add data-lang-node=\"NODE_NAME_HERE\" for the translator to work");
-            continue; // continue to the next element since this one is not configured
-        }
-
-        let translatedText = translate(dataLangNode);
-
-        element.innerHTML = translatedText;
-    }
-}
-
-/**
- * Get the translation from a language node
- * 
- * @param {string} node The language node to get
- * @param {boolean} use_fallback Set to true to use fallback language on failure
- * @param {string} language_to_use The language to translate from
- * @returns Translated string
- */
-
-function translate(node, use_fallback = true, language_to_use = null) {
-    let language = languageMap[language_to_use != null ? language_to_use : selectedLanguage];
-
-    if (language == undefined) {
-        if (use_fallback) {
-            console.warn("Trying to get fallback translation for node " + node + " since the language " + selectedLanguage + " could not be found");
-            return translate(node, false, DEFAULT_OR_FALLBACK_LANGUAGE);
-        }
-        return node;
-    } else {
-        let content = language.content[node];
-
-        if (content == undefined) {
-            if (use_fallback) {
-                console.warn("Trying to get fallback translation for node " + node + " since the language " + selectedLanguage + " does not contain a translation for that node");
-                return translate(node, false, DEFAULT_OR_FALLBACK_LANGUAGE);
+        document.getElementById('lang-select').value = localStorage.getItem('lang'); // Set selector option to the lang selected
+        fs.readFile(electronapp.getAppPath() + '/translator/langs/' + localStorage.getItem("lang-file"), 'utf8', (err, data) => { // Read the lang file selectioned
+            if (err) {
+                console.error(err) // Log if have a error
+                return
             }
-        } else {
-            return content;
-        }
+            let file = JSON.parse(data); // Parse the json
 
-        return node;
+            // get all elements with the translate class
+            let toTranslate = document.getElementsByClassName("translate");
+
+            // loop thru them
+            for (let i = 0; i < toTranslate.length; i++) {
+                // get each element
+                let elem = toTranslate[i];
+
+                let dataLangNode = elem.dataset["langNode"];
+
+                if (dataLangNode == undefined) {
+                    console.warn("Element " + elem.id + " has translate class but no lang-node data. Please add data-lang-node=\"NODE_NAME_HERE\" for the translator to work");
+                    continue; // continue to the next element since this one is not configured
+                }
+
+                let translatedText = file.content[dataLangNode];
+
+                // Check if the language node exists
+                if (translatedText == undefined) {
+                    console.warn("Could not find language node " + dataLangNode + " in " + localStorage.getItem("lang-file"));
+                    continue; // continue to the next node since there is not translation for this one
+                }
+
+                //console.log("element " + elem.id + " with data-lang-node set to " + dataLangNode + " should be translated to " + file[elem.id]); // for debugging
+                elem.innerHTML = translatedText;
+            }
+        });
     }
 }
 
-/**
- * Called when the language dropdown changes
- */
-function updateSelectedLanguage() {
-    let langSelect = document.getElementById("lang-select");
-    selectedLanguage = langSelect.value;
-
-    console.log(selectedLanguage);
-
-    localStorage.removeItem('selected_language');
-    localStorage.setItem('selected_language', selectedLanguage);
-
-    translateElements();
+function validateLang() { // When button done is pressed
+    let langSelect = document.getElementById("lang-select"); // Get selector
+    localStorage.removeItem('lang'); // Clear localstorage
+    localStorage.removeItem('lang-file'); // Clear localstorage
+    localStorage.setItem('lang', langSelect.value); // Add the lang name at localstorage
+    localStorage.setItem('lang-file', langMap.get(langSelect.value)); // Add the lang name at localstorage
+    console.log(localStorage.getItem('lang')); // Log to console
+    console.log(localStorage.getItem('lang-file')); // Log to console
+    initLang() //Re init for save change
 }
