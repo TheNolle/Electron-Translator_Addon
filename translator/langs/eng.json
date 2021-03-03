@@ -1,5 +1,6 @@
 {
-    "name": "English",
+    "name": "english",
+    "display_name": "English",
     "content": {
         "main.title": "Electron Translator by TheNolle",
 
