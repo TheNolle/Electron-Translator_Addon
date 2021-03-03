@@ -36,4 +36,4 @@ Else I will take actions regarding on the French's Law about copyrights.
 
 ## License
 
-Licensed under the <a href="./LICENSE">MIT License</a>.
+Licensed under the <a href="./LICENSE">BSD 3-Clause License</a>.
