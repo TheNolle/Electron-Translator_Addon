@@ -1,6 +1,9 @@
 # Package Lock
 package-lock.json
 
+# Visual Studio Code
+workspace.code-workspace
+
 # Logs
 logs
 *.log
