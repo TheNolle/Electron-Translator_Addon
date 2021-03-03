@@ -1,5 +1,6 @@
 {
-    "name": "Français",
+    "name": "french",
+    "display_name": "Français",
     "content": {
         "main.title": "Traducteur Electron par TheNolle",
 
