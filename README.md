@@ -1,8 +1,6 @@
-# TheNolle's Electron Translator Plugin
+[![Copyright](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=50&duration=3000&pause=2000&color=EB87F7&center=true&vCenter=true&width=1000&height=50&lines=Nolly)](https://thenolle.com/Discord)
 
-<a href="https://TheNolle.com/Discord">
-<img src="https://www.thenolle.com/global_assets/img/banners/discord.png" width="250"/>
-</a>
+# TheNolle's Electron Translator Plugin
 
 - This repository has been created to publish a work in collaboration with @AntonUden
 - You can try to improve the plugin on your own and make pull requests if you want to.
